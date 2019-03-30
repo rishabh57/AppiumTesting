@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example test run" parallel="tests" thread-count="1">
+
+	  <test name="Android">
+		<parameter name="appiumServerUrl" value="0.0.0.0" />
+		<parameter name="appiumPort" value="4723" />
+		<parameter name="platform" value="android" />
+		<parameter name="platformVersion" value="8.1.0" />
+		<parameter name="deviceName" value="Nexus_5X" />
+		<parameter name="appPath"
+			value="src/test/resources/selendroid-test-app-0.17.0.apk" />
+		<classes>
+			<class name="com.testing.tests.Sanity_Test" />
+		</classes>
+	</test>
+</suite>
